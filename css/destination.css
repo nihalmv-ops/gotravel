@@ -1,0 +1,89 @@
+
+
+.destinations{
+
+    padding:100px 0;
+    background:#eef7ff;
+
+}
+
+.destination-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+.destination-card{
+
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.4s;
+
+}
+
+.destination-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.destination-card img{
+
+    width:100%;
+    height:250px;
+    object-fit:cover;
+
+}
+
+.destination-content{
+
+    padding:25px;
+
+}
+
+.destination-content h3{
+
+    color:#0d6efd;
+    margin-bottom:15px;
+
+}
+
+.destination-content p{
+
+    color:#666;
+    line-height:1.7;
+    margin-bottom:20px;
+
+}
+
+.destination-content .btn{
+
+    display:inline-block;
+    padding:10px 25px;
+    background:#0d6efd;
+    color:#fff;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+.destination-content .btn:hover{
+
+    background:#0b5ed7;
+
+}
+
+@media(max-width:768px){
+
+    .destination-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
